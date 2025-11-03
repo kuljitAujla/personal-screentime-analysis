@@ -30,11 +30,11 @@ data = [
     ["2025-10-26","Weekend",108,42,"Social",49,1,1,19,1,0,8,8,0,0,0],
     ["2025-10-27","Weekday",141,38,"Social",81,3,14,3,0,0,18,0,0,0,6],
     # ---------- Oct 28–Nov 1 ----------
-    ["2025-10-28","Weekday",337,86,"Social",196,14,36,41,11,21,0,0,2,0],
-    ["2025-10-29","Weekday",215,63,"Social",104,2,13,48,3,6,25,0,0,0],
-    ["2025-10-30","Weekday",300,85,"Social",112,0,57,58,16,28,23,0,14,0],
-    ["2025-10-31","Weekday",220,69,"Social",93,17,19,32,11,0,28,7,0,0],
-    ["2025-11-01","Weekend",175,48,"Social",74,11,1,45,2,11,9,0,0,0],
+    ["2025-10-28","Weekday",337,86,"Social",196,14,36,41,11,21,0,0,2,0,0],
+    ["2025-10-29","Weekday",215,63,"Social",104,2,13,48,3,6,25,0,0,0,0],
+    ["2025-10-30","Weekday",300,85,"Social",112,0,57,58,16,28,23,0,14,0,0],
+    ["2025-10-31","Weekday",220,69,"Social",93,17,19,32,11,0,28,7,0,0,0],
+    ["2025-11-01","Weekend",175,48,"Social",74,11,1,45,2,11,9,0,0,0,0]
 ]
 
 columns = [
@@ -45,5 +45,5 @@ columns = [
 ]
 
 df = pd.DataFrame(data, columns=columns)
-df.to_csv("../data/screentime_dataset.csv", index=False)
+df.to_csv("../data/screentime_dataset.csv", index=False, lineterminator='\n')
 print("CSV saved as screentime_dataset.csv")
